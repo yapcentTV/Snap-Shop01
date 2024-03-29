@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Img/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Bubbles&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Khula:700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="theme/style.css">
+    <script src="HomeJs/script.js" defer></script>
+    <script src="HomeJs/script1.js" defer></script>
+    <script src="HomeJs/script2.js" defer></script>
+    <script src="HomeJs/script3.js" defer></script>
+
+    <title>HOME</title>
+</head>
+
+<body>
+    
+        <form class="search">
+            <input type="text" placeholder="Search" class="search__input" />
+            <button type="button" class="search__button">
+            <i class="ri-search-2-line"></i>
+            </button>
+         </form>
+
+        <div class="word">
+          <span>A</span>
+          <span>N</span>
+          <span>N</span>
+          <span>O</span>
+          <span>U</span>
+          <span>N</span>
+          <span>C</span>
+          <span>E</span>
+          <span>M</span>
+          <span>E</span>
+          <span>N</span>
+          <span>T</span>
+        </div>
+
+        <div class="lay">
+            <img class="ment" src="Img/d.jpg">
+        </div>
+        
+        <div class="show">
+            <div class="idle">
+            <img class="sw" src="Fea/01.jpg">
+            <img class="sw" src="Fea/06.jpg">
+            <img class="sw" src="Fea/wt.jpg">
+            </div>
+        </div>
+
+<nav class="wrapper">
+    <div><img id="set" src="Img/moon.png"></div>
+    <div class="lg">
+        <img class="bg" src="Img/or.png">
+    </div>
+    
+    <div class="name">Snap Shop</div>
+    <div class="sidebar">
+    <design>
+        <ul>
+		<li><a href="#"><i class="fas fa-user-edit"></i> Profile</a></li>
+		<li><a href="CART.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+		<li><a href="#"><i class="fas fa-address-card"></i> Track My Order</a></li>
+        <li><a href="#"><i class="fas fa-smile-beam"></i> Customer Care</a></li>
+        <li><a href="SIGN IN.html"><i class="fas fa-chalkboard-teacher"></i> Log In</a></li>
+        &emsp; &emsp;  &emsp; &ensp;
+        </ul> 
+    </design>
+    </div>
+</nav>
+
+<div class="swiper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <div class="carousel">
+      <a href=#><img src="Fea/6.jpg" alt="1" draggable="false"></a>
+      <a href=#><img src="Fea/2.jpg" alt="2" draggable="false"></a>
+      <a href=#><img src="Fea/7.jpg" alt="3" draggable="false"></a>
+      <a href=#><img src="Fea/3.jpg" alt="4" draggable="false"></a>
+      <a href=#><img src="Fea/5.jpg" alt="5" draggable="false"></a>
+      <a href=#><img src="Fea/4.jpg" alt="6" draggable="false"></a>
+      <a href=#><img src="Fea/10.jpg" alt="7" draggable="false"></a>
+      <a href=#><img src="Fea/1.jpg" alt="8" draggable="false"></a>
+      <a href=#><img src="Fea/12.jpg" alt="9" draggable="false"></a>
+      <a href=#><img src="Fea/11.jpg" alt="10" draggable="false"></a>
+    </div>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+
+<div class='console-container'>
+    <span id='text'></span>
+<div class='console-underscore' id='console'>&#95;</div></div>
+
+<div class="container">
+    <header>
+        <h1 id="page-logo">Your Shopping Cart</h1>
+        <div class="shopping">
+            <img src="image/01.webp">
+            <span class="quantity">0</span>
+        </div>
+    </header>
+
+    <div class="list"></div>
+
+</div>
+<div class="card">
+    <h1>My Cart</h1>
+    <ul class="listCard">
+    </ul>
+    <div class="checkOut">
+        <div class="total">0</div>
+        <div class="closeShopping">Close</div>
+    </div>
+</div>
+
+<div class="help">
+    <a href=#><img class="elp" src="Img/help.png" alt="help"></a>
+</div>
+
+<div id="footer"><h3>Copyright © 2024 (Official website only). All Rights Reserved<h3></div>
+
+<script>
+var icon = document.getElementById("set");
+
+  icon.onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      if(document.body.classList.contains("dark-theme")){
+           icon.src = "Img/sun.png";
+      }else{
+           icon.src = "Img/moon.png";
+      }
+  }
+</script>
+
+</body>
+</html>

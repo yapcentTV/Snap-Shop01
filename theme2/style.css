@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+      background-color: var(--primary-color);
+      background-attachment: fixed;
+  }
+
+  :root{
+    --primary-color:  #d7d8da;
+    --secondary-color:  #212121;
+  }
+  .dark-theme{
+   --primary-color: #0d0d0f;
+    --secondary-color:  #fff;
+  }
+
+
+  .im{
+    display: fixed;
+    position: absolute;
+    top: 92vh;
+    right: 1%;
+  }
+
+  .nt{
+    max-width: 15vw;
+    height: 5vh;
+  }
+
+  #set{
+    width: 3vw;
+    height: 5vh;
+    display: block;
+    position: absolute;
+    top: 2vh;
+    right: 1.5vw;
+    cursor: pointer;
+    filter: contrast(2);
+    filter: saturate(2);
+    z-index: 1000;
+   }
+   
+   .lg {
+     display: flex;
+     position: absolute;
+     left: 1.5vw;
+     top: .5vh;
+     z-index: 1000;
+     filter: contrast(2);
+     filter: saturate(3);
+     cursor: pointer;
+   }
+   
+   .bg{
+     width: 5vw;
+     height: 8vh;
+   }
+
+   .name{
+     z-index: 1000;
+     display: inline;
+     position: absolute;
+     font-family: "Corbel", sans-serif;
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: var(--secondary-color);
+     cursor: pointer;
+     top: 2.5vh;
+     left: 6vw;
+   }
+   
+   .search {
+    z-index: 1000;
+     display: flex;
+     position: absolute;
+     top: 2vh;
+     left: 15%;
+     align-items: center;
+     background-color: white;
+     padding: 5px;
+     border-radius: 30px;
+     border: 5px inset orangered;
+   }
+   .search :is(input, button) {
+     background: transparent;
+     color: black;
+     font-size: 1rem;
+     border: none;
+     outline: none;
+   }
+   .search__input {
+     width: 17vw;
+   }
+   .search__button {
+     display: grid;
+     place-items: center;
+     width: 2vw;
+     height: 2.5vh;
+     cursor: pointer;
+     transition: color 0.25s;
+   }
+   .search__button:hover {
+     color: gray;
+   }
+   .search:focus-within input {
+     width: 17vw;
+   }
+   ::placeholder {
+     font-size: 1rem;
+     font-family: "Candara", sans-serif;
+     color: gray;
+ }
+
+ design i {
+    color: goldenrod;
+  }
+
+  .wrapper .sidebar{
+    display: flex;
+    left: 0vw;
+    top: 0vh;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 9.5vh;
+    background: var(--primary-color);
+    position: relative;
+    z-index: 999;
+  }
+
+  .wrapper .sidebar ul li{
+    transform: translate(-50% -50%);
+    display: inline;
+    padding-top: 0%;
+    padding: 10px;
+  }    
+
+  .wrapper .sidebar ul li a{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    color: var(--secondary-color);
+  }
+
+  .wrapper .sidebar ul li:hover{
+   background-color: var(--secondary-color);
+   padding: 24.5px;
+  }
+
+  .wrapper .sidebar ul li:hover a{
+    color: rgb(201, 77, 29)
+  }
+
+  .sidebar{
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 10px rgba(0,0,0,0.1) insert;
+  }
+  .sidebar:before,
+  .sidebar:after{
+    content:'';
+    position: absolute;
+    z-index:-1;
+    box-shadow: 0 0 5px var(--secondary-color);
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }

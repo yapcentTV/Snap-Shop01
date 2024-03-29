@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Img/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="theme2/style.css">
+    <script src="script1.js" defer></script>
+
+    <title>CART</title>
+</head>
+
+<body>
+
+    <div><img id="set" src="Img/moon.png"></div>
+      
+    <form class="search">
+      <input type="text" placeholder="Search" class="search__input" />
+      <button type="button" class="search__button">
+      <i class="ri-search-2-line"></i>
+      </button>
+  </form>
+
+     <div class="im">
+        <a href=HOME.html><img class="nt" src="Img/home1.png"></a>
+     </div>
+
+  <nav class="wrapper">
+    <div class="sidebar">
+    <design>
+        <ul>
+		<li><a href="#"><i class="fas fa-user-edit"></i> Profile</a></li>
+		<li><a href="CART.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+		<li><a href="#"><i class="fas fa-address-card"></i> Track My Order</a></li>
+        <li><a href="#"><i class="fas fa-smile-beam"></i> Customer Care</a></li>
+        <li><a href="SIGN IN.html"><i class="fas fa-chalkboard-teacher"></i> Log In</a></li>
+        &emsp; &emsp;  &emsp; &ensp;
+        </ul> 
+    </design>
+    </div>
+</nav>
+
+<div class="lg">
+    <img class="bg" src="Img/or.png">
+</div>
+
+<div class="name">Snap Shop</div>
+
+    <script>
+        var icon = document.getElementById("set");
+        
+          icon.onclick = function(){
+              document.body.classList.toggle("dark-theme");
+              if(document.body.classList.contains("dark-theme")){
+                   icon.src = "Img/sun.png";
+              }else{
+                   icon.src = "Img/moon.png";
+              }
+          }
+        </script>
+
+</body>
+
+</html>
