@@ -1,0 +1,1 @@
+const spans=document.querySelectorAll(".word span");spans.forEach((e,t)=>{e.addEventListener("click",e=>{e.target.classList.add("active")}),e.addEventListener("animationend",e=>{e.target.classList.remove("active")}),setTimeout(()=>{e.classList.add("active")},750*(t+1))});

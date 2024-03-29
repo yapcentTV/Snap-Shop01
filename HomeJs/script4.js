@@ -1,0 +1,1 @@
+var icon=document.getElementById("set");icon.onclick=function(){document.body.classList.toggle("dark-theme"),document.body.classList.contains("dark-theme")?icon.src="Img/sun.png":icon.src="Img/moon.png"};
