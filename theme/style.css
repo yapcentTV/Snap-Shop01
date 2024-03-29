@@ -7,7 +7,7 @@
 body{
     background-color: var(--primary-color);
     background-attachment: fixed;
-    font-family: "Candar", sans-serif;
+    font-family: "Poppins", sans-serif;
     max-height: 340vh;
 }
 
@@ -450,7 +450,7 @@ body{
   }    
 
   .wrapper .sidebar ul li a{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
     text-decoration: none;
     transition: 0.2s ease-in-out;
@@ -459,7 +459,7 @@ body{
 
   .wrapper .sidebar ul li:hover{
    background-color: var(--secondary-color);
-   padding: 24.5px;
+   padding: 21.5px;
   }
 
   .wrapper .sidebar ul li:hover a{
@@ -496,8 +496,8 @@ body{
     text-align:center;
     height: 200px;
     width:100%;
-    display:block;
-    position:absolute;
+    display: block;
+    position: absolute;
     text-shadow: 5px 5px var(--primary-color);
     color: wheat;
     top: 115%;
@@ -673,7 +673,7 @@ header .shopping span{
 
 .swiper{
   padding-left: 3.5%;
-  padding-top: 65%;
+  padding-top: 67%;
   display: flex;
   max-width: 97%;
   position: relative;
