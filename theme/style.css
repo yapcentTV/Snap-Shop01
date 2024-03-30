@@ -450,7 +450,7 @@ body{
   }    
 
   .wrapper .sidebar ul li a{
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.1rem;
     text-decoration: none;
     transition: 0.2s ease-in-out;
