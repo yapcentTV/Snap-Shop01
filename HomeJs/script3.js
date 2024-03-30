@@ -1,1 +1,57 @@
-const carousel=document.querySelector(".carousel"),firstImg=carousel.querySelectorAll("img")[0],arrowIcons=document.querySelectorAll(".swiper i");let isDragStart=!1,isDragging=!1,prevPageX,prevScrollLeft,positionDiff;const showHideIcons=()=>{var e=carousel.scrollWidth-carousel.clientWidth;arrowIcons[0].style.display=0==carousel.scrollLeft?"none":"block",arrowIcons[1].style.display=carousel.scrollLeft==e?"none":"block"};arrowIcons.forEach(o=>{o.addEventListener("click",()=>{var e=firstImg.clientWidth+14;carousel.scrollLeft+="left"==o.id?-e:e,setTimeout(()=>showHideIcons(),60)})});const autoSlide=()=>{if(!(-1<carousel.scrollLeft-(carousel.scrollWidth-carousel.clientWidth)||carousel.scrollLeft<=0)){positionDiff=Math.abs(positionDiff);var e=firstImg.clientWidth+14,o=e-positionDiff;if(carousel.scrollLeft>prevScrollLeft)return carousel.scrollLeft+=positionDiff>e/3?o:-positionDiff;carousel.scrollLeft-=positionDiff>e/3?o:-positionDiff}},dragStart=e=>{isDragStart=!0,prevPageX=e.pageX||e.touches[0].pageX,prevScrollLeft=carousel.scrollLeft},dragging=e=>{isDragStart&&(e.preventDefault(),isDragging=!0,carousel.classList.add("dragging"),positionDiff=(e.pageX||e.touches[0].pageX)-prevPageX,carousel.scrollLeft=prevScrollLeft-positionDiff,showHideIcons())},dragStop=()=>{isDragStart=!1,carousel.classList.remove("dragging"),isDragging&&(isDragging=!1,autoSlide())};carousel.addEventListener("mousedown",dragStart),carousel.addEventListener("touchstart",dragStart),document.addEventListener("mousemove",dragging),carousel.addEventListener("touchmove",dragging),document.addEventListener("mouseup",dragStop),carousel.addEventListener("touchend",dragStop);
+const carousel = document.querySelector(".carousel"),
+firstImg = carousel.querySelectorAll("img")[0],
+arrowIcons = document.querySelectorAll(".swiper i");
+
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+const autoSlide = () => {
+   
+    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+
+    positionDiff = Math.abs(positionDiff); 
+    let firstImgWidth = firstImg.clientWidth + 14;
+   
+    let valDifference = firstImgWidth - positionDiff;
+
+    if(carousel.scrollLeft > prevScrollLeft) { 
+        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+   
+    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+}
+
+const dragStart = (e) => {
+  
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = carousel.scrollLeft;
+}
+
+const dragging = (e) => {
+  
+    if(!isDragStart) return;
+    e.preventDefault();
+    isDragging = true;
+    carousel.classList.add("dragging");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
+}
+
+const dragStop = () => {
+    isDragStart = false;
+    carousel.classList.remove("dragging");
+
+    if(!isDragging) return;
+    isDragging = false;
+    autoSlide();
+}
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("touchstart", dragStart);
+
+document.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchmove", dragging);
+
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("touchend", dragStop);
