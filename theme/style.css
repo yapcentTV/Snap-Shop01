@@ -23,7 +23,7 @@ body{
 #set{
  width: 3vw;
  height: 5vh;
- display: block;
+ display: inline-block;
  position: absolute;
  top: 2vh;
  right: 1.5vw;
@@ -100,7 +100,7 @@ body{
 }
 ::placeholder {
   font-size: 1rem;
-  font-family: "Candara", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: gray;
 }
 
@@ -496,7 +496,7 @@ body{
     text-align:center;
     height: 200px;
     width:100%;
-    display: block;
+    display: inline-block;
     position: absolute;
     text-shadow: 5px 5px var(--primary-color);
     color: wheat;
@@ -619,7 +619,7 @@ header .shopping span{
 .card h1{
   background-color: orangered;
   color: seashell;
-  font-family: "Corbel", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   margin: 0;
   padding: 0 20px;
@@ -676,29 +676,10 @@ header .shopping span{
   padding-top: 67%;
   display: flex;
   max-width: 97%;
+  display: flex;
   position: relative;
 }
-.swiper i{
-  top: 84%;
-  color: darkred;
-  cursor: pointer;
-  font-size: 4rem;
-  position: absolute;
-  text-align: center;
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
-}
-.swiper i:active{
-  transform: translateY(-50%) scale(0.9);
-}
 
-.swiper i:first-child{
-  left: 26px;
-  display: none;
-}
-.swiper i:last-child{
-  right: -22px;
-}
 .swiper .carousel{
   font-size: 0px;
   cursor: pointer;
@@ -714,12 +695,18 @@ header .shopping span{
   pointer-events: none;
 }
 .carousel img{
-  border: 10px solid  var(--primary-color);
-  height: 400px;
+  border-radius: 30px;
+  border: 15px solid var(--primary-color);
+  height: 440px;
   object-fit: fill;
   user-select: none;
   width: calc(100% / 2);
 }
+
+.carousel img:hover{
+  transform: scale(1.1);
+}
+
 .carousel img:first-child{
   margin-left: 0px;
 }
@@ -752,7 +739,7 @@ header .shopping span{
 
 h3 {
   font-family: "HoloLens MDL2 Assets", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--primary-color);
 }
 
