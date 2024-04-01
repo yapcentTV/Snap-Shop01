@@ -21,19 +21,32 @@
     <script src="HomeJs/script1.js" defer></script>
     <script src="HomeJs/script2.js" defer></script>
     <script src="HomeJs/script3.js" defer></script>
-    <script src="HomeJs/script4.js" defer></script>
 
     <title>HOME</title>
 </head>
-
-<body>
     
+<body>
+
+    <header class="head">
+        <a href="#"><img class="pic" src="Img/tl.png"></a>
         <form class="search">
-            <input type="text" placeholder="Search" class="search__input" />
-            <button type="button" class="search__button">
-            <i class="ri-search-2-line"></i>
-            </button>
-         </form>
+                <input type="text" placeholder="Search" class="search__input" />
+                <button type="button" class="search__button">
+                <i class="ri-search-2-line"></i>
+                </button>
+             </form>
+
+<nav class="navbar">
+        <a href="#"><i class="fas fa-user-edit"></i> Profile<span></span></a>
+        <a href="CART.html"><i class="fas fa-shopping-cart"></i> Cart<span></span></a>
+        <a href="#"><i class="fas fa-address-card"></i> Track My Order<span></span></a>
+        <a href="#"><i class="fas fa-smile-beam"></i> Customer Care<span></span></a>
+        <a href="SIGN IN.html"><i class="fas fa-chalkboard-teacher"></i> Log In<span></span></a>
+        <img id="icon" src="Img/moon.png">
+</nav>
+</header>
+
+<section class="banner"></section>
 
         <div class="word">
           <span>A</span>
@@ -61,26 +74,6 @@
             <img class="sw" src="Fea/wt.jpg">
             </div>
         </div>
-
-<nav class="wrapper">
-    <div><img id="set" src="Img/moon.png"></div>
-    <div class="lg">
-        <img class="bg" src="Img/or.png">
-    </div>
-    <div class="name">Snap Shop</div>
-    <div class="sidebar">
-    <design>
-        <ul>
-		<li><a href="#"><i class="fas fa-user-edit"></i> Profile</a></li>
-		<li><a href="CART.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
-		<li><a href="#"><i class="fas fa-address-card"></i> Track My Order</a></li>
-        <li><a href="#"><i class="fas fa-smile-beam"></i> Customer Care</a></li>
-        <li><a href="SIGN IN.html"><i class="fas fa-chalkboard-teacher"></i> Log In</a></li>
-        &emsp; &emsp;  &emsp; &ensp;
-        </ul> 
-    </design>
-    </div>
-</nav>
 
 <div class="swiper">
     <div class="carousel">
@@ -128,6 +121,19 @@
 </div>
 
 <div id="footer"><h3>Copyright © 2024 (Official website only). All Rights Reserved<h3></div>
+
+    <script>
+        var icon = document.getElementById("icon");
+    
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                 icon.src = "Img/sun.png";
+            }else{
+                 icon.src = "img/moon.png";
+            }
+        }
+    </script>
 
 </body>
 </html>
