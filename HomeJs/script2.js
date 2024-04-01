@@ -16,7 +16,7 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'Calvin Klein Kids Set',
+        name: 'Calvin Klein Kids Fashion',
         image: '1.PNG',
         price: 20999
     },
@@ -28,7 +28,7 @@ let products = [
     },
     {
         id: 3,
-        name: 'Hawk New Gen Bag',
+        name: 'Hawk Genth Bag',
         image: '3.PNG',
         price: 3999
     },
@@ -82,7 +82,7 @@ let products = [
     },
     {
         id: 12,
-        name: 'Calvin Klein Shirt',
+        name: 'Calvin Klein T-Shirt',
         image: '12.PNG',
         price: 999
     }
