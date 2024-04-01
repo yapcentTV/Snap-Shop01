@@ -15,13 +15,13 @@ body{
 }
 
 #mytitle {
-    font-family: Ink Free;
+    font-family: "Poppins", sans-serif;
     font-size: 30pt;
     font-weight: bold;
 }
 
 #greet {
-    font-family: Segoe Script;
+    font-family: "Segoe Script", sans-serif;
     font-size: 23pt;
     font-weight: bold;
 }
