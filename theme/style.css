@@ -711,18 +711,6 @@ header .shopping span{
   margin-left: 0px;
 }
 
-@media screen and (max-width: 900px) {
-  .carousel img{
-    width: calc(100% / 2);
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .carousel img{
-    width: 100%;
-  }
-}
-
 .help{
   display: fixed;
   position: absolute;
@@ -756,4 +744,29 @@ h3 {
   background-color: var(--secondary-color);
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width:767px){
+  /*CSS for mobile devices*/
+}
+@media only screen and (min-width:768px)and(max-width:1023px){
+  /*CSS for tablet devices*/
+}
+@media only screen and (min-width:1024px)and(max-width:1439px){
+  /*CSS for laptop devices*/
+}
+@media only screen and (min-width:1440px){
+  /*CSS for desktop devices*/
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
 }
