@@ -49,8 +49,8 @@ width: 3vw;
 height: 5vh;
 cursor: pointer;
 z-index: 1;
-filter: contrast(5);
-filter: saturate(3);
+filter: contrast(1.2);
+filter: saturate(1);
 }
 
 .head{
