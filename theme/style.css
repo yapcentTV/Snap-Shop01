@@ -142,6 +142,9 @@ body{
 .navbar i{
   color: goldenrod;
 }
+.navbar i:hover{
+  color: darkblue;
+}
 
 .banner{
   position: relative;
