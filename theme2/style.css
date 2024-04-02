@@ -134,7 +134,7 @@ filter: saturate(1);
 }
 
 .navbar a:hover{
- color: darkblue;
+ color: orangered;
 }
 .navbar a span{
  position: absolute;
@@ -153,6 +153,9 @@ filter: saturate(1);
 }
 .navbar i{
  color: goldenrod;
+}
+.navbar i:hover{
+  color: darkblue;
 }
 
 .banner{
