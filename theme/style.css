@@ -32,7 +32,7 @@ body{
 }
 
 #icon{
- margin-left: 10px;
+ margin-left: 5px;
  width: 3vw;
  height: 5vh;
  cursor: pointer;
@@ -55,7 +55,7 @@ body{
 }
 
 .pic{
-  margin-top: 10px;
+  margin-top: 2px;
   display: flex;
   z-index: 10;
   filter: contrast(2);
