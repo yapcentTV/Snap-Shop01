@@ -80,7 +80,7 @@ filter: saturate(1);
 .search {
  display: flex;
  position: absolute;
- margin-left: 60px;
+ margin-left: 75px;
  align-items: center;
  background-color: white;
  padding: 5px;
